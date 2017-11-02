@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-//connection details. Modified for online usage.
+
 var connection = mysql.createConnection({
 	port: 8889,
     host: '127.0.0.1',
@@ -15,5 +15,7 @@ connection.connect(function(err) {
     }
     console.log('connected as id ' + connection.threadId);
 });
-//export to other files. like server.
+
+//export to other files.
+
 module.exports = connection;
